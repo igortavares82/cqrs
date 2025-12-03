@@ -1,0 +1,4 @@
+dotnet new list
+dotnet new classlib --name Rent.Common
+dotnet sln add Rent.Command.Model/Rent.Command.Model.csproj
+dotnet add ./rent-command-application/Rent.Command.Model/Rent.Command.Model.csproj reference ./common/Rent.Common/Rent.Common.csproj
